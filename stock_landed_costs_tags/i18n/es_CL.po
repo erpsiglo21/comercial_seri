@@ -1,0 +1,107 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* stock_landed_costs_tags
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-11 20:16+0000\n"
+"PO-Revision-Date: 2019-06-11 20:16+0000\n"
+"Last-Translator: Alexander Olivares <aoa@odoolatam.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: stock_landed_costs_tags
+#: model:ir.model.fields,field_description:stock_landed_costs_tags.field_account_invoice_analytic_tag_ids
+msgid "Analytic Tags"
+msgstr "Etiquetas Analíticas"
+
+#. module: stock_landed_costs_tags
+#: model:ir.model.fields,field_description:stock_landed_costs_tags.field_stock_landed_cost_analytic_tag_id
+msgid "Analytic tag"
+msgstr "Etiqueta analítica"
+
+#. module: stock_landed_costs_tags
+#: model:ir.model.fields,help:stock_landed_costs_tags.field_stock_landed_cost_analytic_tag_id
+msgid "Analytic tag that will be searched. E.g. DIN1"
+msgstr "Etiqueta analítica que se buscará. E.j. DIN1"
+
+#. module: stock_landed_costs_tags
+#: model:ir.model.fields,help:stock_landed_costs_tags.field_account_invoice_analytic_tag_ids
+msgid "Analytic tags to be associated with this invoice."
+msgstr "Etiquetas analítica para asociarse a esta factura."
+
+#. module: stock_landed_costs_tags
+#: model:ir.model.fields,help:stock_landed_costs_tags.field_stock_valuation_adjustment_lines_new_cost
+msgid "Former Cost (Per unit) + Additional Landed Cost / Quantity"
+msgstr "Costo anterior (por unidad) + Costes adicionales en destino / Cantidad"
+
+#. module: stock_landed_costs_tags
+#: model:ir.ui.view,arch_db:stock_landed_costs_tags.view_stock_landed_cost_form_inherit
+msgid "Generate"
+msgstr "Generar"
+
+#. module: stock_landed_costs_tags
+#: model:ir.model,name:stock_landed_costs_tags.model_account_move
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: stock_landed_costs_tags
+#: model:ir.model,name:stock_landed_costs_tags.model_account_move_line
+msgid "Invoice Line"
+msgstr "Linea de Factura"
+
+#. module: stock_landed_costs_tags
+#: model:product.product,name:stock_landed_costs_tags.product_product_landed_cost_1
+#: model:product.template,name:stock_landed_costs_tags.product_product_landed_cost_1_product_template
+msgid "Landed Cost 1"
+msgstr "Gasto de Envío 1"
+
+#. module: stock_landed_costs_tags
+#: model:product.product,name:stock_landed_costs_tags.product_product_landed_cost_2
+#: model:product.template,name:stock_landed_costs_tags.product_product_landed_cost_2_product_template
+msgid "Landed Cost 2"
+msgstr "Gasto de Envío 2"
+
+#. module: stock_landed_costs_tags
+#: model:ir.model.fields,field_description:stock_landed_costs_tags.field_stock_valuation_adjustment_lines_new_cost
+msgid "New Cost"
+msgstr "Nuevo Costo"
+
+#. module: stock_landed_costs_tags
+#: code:addons/stock_landed_costs_tags/models/stock_landed_cost.py:22
+#, python-format
+msgid "No invoices were found associated with analytic tag."
+msgstr "No se encontraron facturas asociadas con la etiqueta analítica."
+
+#. module: stock_landed_costs_tags
+#: code:addons/stock_landed_costs_tags/models/stock_landed_cost.py:34
+#, python-format
+msgid "None of the invoices has at least one landed cost product."
+msgstr "Ninguna de las facturas tiene al menos un producto de gasto de envío."
+
+#. module: stock_landed_costs_tags
+#: model:ir.model,name:stock_landed_costs_tags.model_stock_landed_cost
+msgid "Stock Landed Cost"
+msgstr "Coste en destino"
+
+#. module: stock_landed_costs_tags
+#: model:ir.model,name:stock_landed_costs_tags.model_stock_valuation_adjustment_lines
+msgid "Stock Valuation Adjustment Lines"
+msgstr "Líneas de ajuste de valorización de stock"
+
+#. module: stock_landed_costs_tags
+#: code:addons/stock_landed_costs_tags/models/stock_landed_cost.py:66
+#, python-format
+msgid "The selected picking does not contain any move that would be impacted by landed costs. Landed costs are only possible for products configured in real time valuation with real price costing method. Please make sure it is the case, or you selected the correct picking"
+msgstr "El albarán seleccionado no contiene ningún movimiento que impacte en los costes en destino. Los costes en destino sólo son posibles para productos configurados con valoración en tiempo real con el método de precio de coste real. Asegúrese de que es el caso, o de que ha seleccionado el albarán adecuado."
+
+#. module: stock_landed_costs_tags
+#: code:addons/stock_landed_costs_tags/models/stock_landed_cost.py:19
+#, python-format
+msgid "The cost lines were already generated."
+msgstr "Las líneas de coste ya fueron generadas."
