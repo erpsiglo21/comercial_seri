@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="reception_information">
+            <div style="font-size:12px;border: 1px solid black;font-size:12px;padding:12px;">
+                <div class="col-xs-12" style="padding:5px;">
+                    <strong>Nombre:</strong>
+                    __________________________________________
+                    <strong>R.U.T.:</strong>
+                    ________________________
+                </div>
+                <div class="col-xs-12" style="padding:5px;">
+                    <strong>Recinto:</strong>
+                    _____________________________________
+                    <strong>Fecha:</strong>
+                    _______________________
+                    <strong>Firma:</strong>
+                    _______________________
+                </div>
+                <div class="col-xs-12" style="padding:5px;">
+                    "El acuse de recibo que se declara en este acto, de acuerdo a lo dispuesto en la letra b) del Artículo 4°, y la letra c) del Artículo 5° de la Ley 19.983, acredita que la entrega de mercaderías o servicio(s) prestado(s) ha(n) sido recibido(s)"
+                </div>
+                <div class="col-xs-12" align="right"><p>Cedible</p></div>
+            </div>
+        </template>
+        <template id="report_invoice_document" inherit_id="l10n_cl.report_invoice_document">
+            <xpath expr="//div[@class='page']" position="inside">
+                <t t-if="print_with_receipt_data"
+                    t-call="l10n_cl_erps21.reception_information" t-lang="lang"/>
+            </xpath>
+        </template>
+        <template id="report_invoice_with_receipt_data" inherit_id="l10n_cl.report_invoice">
+            <xpath expr="//t[@t-set='lang']" position="after">
+                <t t-set="print_with_receipt_data" t-value="True"/>
+            </xpath>
+            <xpath expr='//t[@t-call="account.report_invoice_document"]' position="after">
+                <t t-if="o._get_name_invoice_report() == 'l10n_cl_erps21.report_invoice_document'"
+                    t-call="l10n_cl_erps21.report_invoice_document" t-lang="lang"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
