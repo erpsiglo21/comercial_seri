@@ -28,6 +28,12 @@
                 <t t-if="print_with_receipt_data"
                     t-call="l10n_cl_erps21.reception_information" t-lang="lang"/>
             </xpath>
+            <xpath expr="//p[@name='comment']" position="replace" />
+            <xpath expr="//div[@id='total']" position="after">
+                <p t-if="o.narration" name="comment">
+                  <span t-field="o.narration"/>
+                </p>              
+            </xpath>
         </template>
         <template id="report_invoice_with_receipt_data" inherit_id="l10n_cl.report_invoice">
             <xpath expr="//t[@t-set='lang']" position="after">
