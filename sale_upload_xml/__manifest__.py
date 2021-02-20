@@ -10,24 +10,11 @@
     'depends': [
             'l10n_cl_edi'
         ],
-    # 'external_dependencies': {
-    #     'python': [
-    #         'xmltodict',
-    #         'dicttoxml',
-    #         'pdf417gen',
-    #         'base64',
-    #         'hashlib',
-    #         'cchardet',
-    #         'suds',#use suds-py3
-    #         'urllib3',
-    #         'signxml',
-    #         'ast',
-    #         'pysftp',
-    #         'num2words',
-    #         'xlsxwriter',
-    #         'io',
-    #     ]
-    # },
+     'external_dependencies': {
+         'python': [
+             'base64',
+         ]
+     },
     'data': [
         'wizard/sale_upload_xml.xml',
         'security/ir.model.access.csv'
