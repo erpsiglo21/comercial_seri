@@ -3,7 +3,6 @@ from odoo import models, fields, api
 from odoo.exceptions import UserError
 import re
 import logging
-import xmltodict
 import base64
 import collections
 from lxml import etree
@@ -24,7 +23,6 @@ class SaleUploadXml(models.TransientModel):
     )
 
     def confirm(self, ret=False):
-        context = dict(self._context or {})
         xmlfile = base64.b64decode(self.xml_file).decode('UTF-8').replace('<?xml version="1.0"?>','').replace('<?xml version="1.0" ?>','')
         parser = etree.XMLParser(remove_blank_text=True)
         xml = etree.XML(xmlfile, parser)
