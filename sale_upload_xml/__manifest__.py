@@ -12,20 +12,7 @@
         ],
      'external_dependencies': {
          'python': [
-             'xmltodict',
              'base64',
-    #         'dicttoxml',
-    #         'pdf417gen',
-    #         'hashlib',
-    #         'cchardet',
-    #         'suds',#use suds-py3
-    #         'urllib3',
-    #         'signxml',
-    #         'ast',
-    #         'pysftp',
-    #         'num2words',
-    #         'xlsxwriter',
-    #         'io',
          ]
      },
     'data': [
