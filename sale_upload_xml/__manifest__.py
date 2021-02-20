@@ -10,12 +10,12 @@
     'depends': [
             'l10n_cl_edi'
         ],
-    # 'external_dependencies': {
-    #     'python': [
-    #         'xmltodict',
+     'external_dependencies': {
+         'python': [
+             'xmltodict',
+             'base64',
     #         'dicttoxml',
     #         'pdf417gen',
-    #         'base64',
     #         'hashlib',
     #         'cchardet',
     #         'suds',#use suds-py3
@@ -26,8 +26,8 @@
     #         'num2words',
     #         'xlsxwriter',
     #         'io',
-    #     ]
-    # },
+         ]
+     },
     'data': [
         'wizard/sale_upload_xml.xml',
         'security/ir.model.access.csv'
