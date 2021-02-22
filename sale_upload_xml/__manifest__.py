@@ -8,7 +8,7 @@
     'license': 'AGPL-3',
     'description': "Generate sale order from XML file",
     'depends': [
-            'l10n_cl_edi'
+            'sale', 'l10n_cl_edi'
         ],
      'external_dependencies': {
          'python': [
