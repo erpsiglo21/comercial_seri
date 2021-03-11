@@ -20,7 +20,9 @@
     # always loaded
     'data': [
         'report/account_report.xml',
+        'views/account_move_views.xml',
         'views/report_invoice.xml',
+        'views/res_partner_views.xml',
     ],
     'demo': [
     ],
