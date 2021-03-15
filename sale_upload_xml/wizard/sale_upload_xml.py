@@ -92,7 +92,7 @@ class SaleUploadXml(models.TransientModel):
                         "price_unit": linea["price_unit"],
                     }
                     pol = self.env['sale.order.line'].create(datos)
-                po.action_confirm()
+                # po.action_confirm()
 
             # Mensaje de confirmacion
             message_id = self.env['message.wizard'].create({'message': ("Se ha creado el(los) presupuesto(s)" + generadas)})
